@@ -2,7 +2,7 @@
 ver: 0.1
 name: Equipment Type Rarity
 desc: Changes the inventory item description from "Rarity / Group Name" to "Group Name / Rarity" to make finding item types start and end easier.
-gameVersionMin:
+gameVersionMin: 0.20.0
 gameVersionMax:
 includesConfigOverrides: false
 includesConfigEdits: false
