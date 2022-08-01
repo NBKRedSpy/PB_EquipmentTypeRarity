@@ -16,6 +16,9 @@ The goal is to make it easier to find sections of the same type of item quickly.
 
 ![](Media/TypeRarity.png)
 
+# Mod Compatibility
+This mod is safe to add and remove from existing saves.
+
 
 # Settings
 In the metadata.yaml file, the following settings are available in the modSettings section:
