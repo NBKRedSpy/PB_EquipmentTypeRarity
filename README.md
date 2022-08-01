@@ -1,9 +1,9 @@
 Phantom Brigade Equipment Type and Rarity Change
 
 # Description
-Changes the item display from "Rarity / Item Type" to either "Item Type" or "Item Type / Rarity "
+Changes the item display from "Rarity / Item Type" to either "Item Type" or "Item Type / Rarity".
 
-the goal is to make it easier to find sections of the same type of item quickly.
+The goal is to make it easier to find sections of the same type of item quickly.
 
 ## Original:
 ![](Media/Original.png)
@@ -22,6 +22,7 @@ In the metadata.yaml file, the following settings are available in the modSettin
 
 
 |Setting|Default|Description|
+|--|--|--|
 |showRarity|false|If true, will show item "type / rarity".  Otherwise only the type is shown.|
 
 
