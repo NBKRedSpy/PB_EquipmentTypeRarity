@@ -1,4 +1,5 @@
 ﻿id: NBK_RedSpy.PB_EquipmentTypeRarity
+website: https://github.com/NBKRedSpy/PB_EquipmentTypeRarity
 ver: 0.1
 name: Equipment Type Rarity
 desc: Changes the inventory item description from "Rarity / Group Name" to "Group Name / Rarity" to make finding item types start and end easier.
@@ -9,6 +10,7 @@ includesConfigEdits: false
 includesLibraries: true
 includesLocalizationEdits: false
 includesLocalizations: false
+
 
 modSettings:
  # If true, will show item "type / rarity".  Otherwise only the type is shown.
