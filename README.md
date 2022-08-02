@@ -31,9 +31,9 @@ In the metadata.yaml file, the following settings are available in the modSettin
 
 # Installation
 
-Warning - Phantom Brigade is in Early Access and my change at any time, which may break this mod.
+Warning - Phantom Brigade is in Early Access and may change at any time, which may break this mod.
 
-Additionally any bug reports for modded games will be ignored by the developers. 
+Any bug reports for modded games will be ignored by the developers. 
 
 ## Install the Mod
 
@@ -69,14 +69,15 @@ The mod will now be enabled.
 
 This section is only required if Phantom Brigade has not already been configured to enable mods.
 
-Create a new mods.yaml file in the folder 
-``%HOMEDRIVE%%HOMEPATH%\Documents\My Games\Phantom Brigade\Settings``
+### Setup Game Mod Configuration
+Create new file named mods.yaml in the folder ``%HOMEDRIVE%%HOMEPATH%\Documents\My Games\Phantom Brigade\Settings``
 
-in the mod.yaml file, copy the following text and save:
+In the mod.yaml file, copy the following text and save:
 
 ```
 enabled: true
 loadFromApplicationPath: false
 list: []
 ```
-
+### Create Mods folder
+Create a new folder named Mods in ``%HOMEDRIVE%%HOMEPATH%\Documents\My Games\Phantom Brigade\``
