@@ -15,3 +15,6 @@ includesLocalizations: false
 modSettings:
  # If true, will show item "type / rarity".  Otherwise only the type is shown.
  showRarity: false
+
+ # If true, will add the "Group By Alpha" alphabetical sort in the inventory.
+ EnableGroupByAlpha: true

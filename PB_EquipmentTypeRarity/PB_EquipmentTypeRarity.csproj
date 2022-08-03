@@ -76,6 +76,7 @@
   <ItemGroup>
     <Compile Include="ModEntry.cs" />
     <Compile Include="ModSettingsDto.cs" />
+    <Compile Include="Patches\GroupByAlphaPatch.cs" />
     <Compile Include="Patches\PatchConfigurePartEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ModSettings.cs" />
