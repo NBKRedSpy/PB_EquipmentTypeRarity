@@ -1,9 +1,15 @@
 Phantom Brigade Equipment Type and Rarity Change
 
 # Description
-Changes the item display from "Rarity / Item Type" to either "Item Type" or "Item Type / Rarity".
+Changes the following:
+* Item display from "Rarity / Item Type" to either "Item Type" or "Item Type / Rarity".
+* Adds a "Group by Alpha" sort in the inventory.
 
-The goal is to make it easier to find sections of the same type of item quickly.
+
+
+
+# Rarity Type Text Change
+The goal is to make it easier to find sections of the same type of item quickly.  The user can choose between showing the Item Type, or the Item Type and Rarity.
 
 ## Original:
 ![](Media/Original.png)
@@ -16,9 +22,18 @@ The goal is to make it easier to find sections of the same type of item quickly.
 
 ![](Media/TypeRarity.png)
 
+
+# Alpha Group
+Adds a sort called "Alpha Group" to the sort options on the inventory screen.  This sorts the inventory alphabetically by the item's group name.
+
+For example, Assault Rifle will be at the top of the list and Sub Machine Gun at the bottom.  
+
+The goal is to speed up locating an item in a large inventory when a user already knows the type they are looking for.
+
+![](Media/AlphaGroupSort.png)
+
 # Mod Compatibility
 This mod is safe to add and remove from existing saves.
-
 
 # Settings
 In the metadata.yaml file, the following settings are available in the modSettings section:
@@ -27,7 +42,7 @@ In the metadata.yaml file, the following settings are available in the modSettin
 |Setting|Default|Description|
 |--|--|--|
 |showRarity|false|If true, will show item "type / rarity".  Otherwise only the type is shown.|
-
+|EnableGroupByAlpha|true|If true, will add the "Group By Alpha" alphabetical sort in the inventory.|
 
 # Installation
 
