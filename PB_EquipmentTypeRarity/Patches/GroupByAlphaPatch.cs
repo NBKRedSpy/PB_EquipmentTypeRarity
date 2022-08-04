@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using PhantomBrigade.Data;
 
+using ItemSortFuncType = System.Func<EquipmentEntity, EquipmentEntity, int, int>;
+
 namespace PB_EquipmentTypeRarity.Patches
 {
 
@@ -23,9 +25,11 @@ namespace PB_EquipmentTypeRarity.Patches
 
             try
             {
+
                 //-- Get the existing sub system sort.
                 MethodInfo groupSubSystemSortMethodInfo = AccessTools.Method(typeof(CIViewBaseCustomizationSelector), "CompareSubsystemForSortingByGroup");
-                Func<EquipmentEntity, EquipmentEntity, int, int> groupSubSystemSortMethodInfoFunction = (Func<EquipmentEntity, EquipmentEntity, int, int>)groupSubSystemSortMethodInfo.CreateDelegate(typeof(Func<EquipmentEntity, EquipmentEntity, int, int>), __instance);
+
+                ItemSortFuncType groupSubSystemSortMethodInfoFunction = (ItemSortFuncType)groupSubSystemSortMethodInfo.CreateDelegate(typeof(ItemSortFuncType), __instance);
 
                 //--Create the sort mode.
 

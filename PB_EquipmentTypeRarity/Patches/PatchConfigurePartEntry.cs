@@ -17,6 +17,7 @@ namespace PB_EquipmentTypeRarity.Patches
             EquipmentEntity part,
             CIHelperEquipmentSelector block)
         {
+            //--Code from the game.
             string partModelName = part.GetPartModelName();
             string equipmentGroupName = part.GetEquipmentGroupName();
             int num2 = part.hasRating ? part.rating.i : 1;
@@ -24,7 +25,7 @@ namespace PB_EquipmentTypeRarity.Patches
             Color averageLevelColor = DataHelperStats.GetAverageLevelColor(num2);
             string hexTagRgba = UtilityColor.ToHexTagRGBA(averageLevelColor);
 
-            //----Start Actual Change
+            //--Actual Change
             string itemString = ModEntry.ModSettings.ShowRarity
                 ? $"{partModelName}\n{equipmentGroupName} / {hexTagRgba}{ratingString}[-][aa]"
                 : $"{partModelName}\n{equipmentGroupName}";
