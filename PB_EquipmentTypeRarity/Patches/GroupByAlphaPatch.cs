@@ -29,7 +29,8 @@ namespace PB_EquipmentTypeRarity.Patches
                 //-- Get the existing sub system sort.
                 MethodInfo groupSubSystemSortMethodInfo = AccessTools.Method(typeof(CIViewBaseCustomizationSelector), "CompareSubsystemForSortingByGroup");
 
-                ItemSortFuncType groupSubSystemSortMethodInfoFunction = (ItemSortFuncType)groupSubSystemSortMethodInfo.CreateDelegate(typeof(ItemSortFuncType), __instance);
+                ItemSortFuncType groupSubSystemSortFunc = (ItemSortFuncType)groupSubSystemSortMethodInfo
+                    .CreateDelegate(typeof(ItemSortFuncType), __instance);
 
                 //--Create the sort mode.
 
@@ -39,7 +40,7 @@ namespace PB_EquipmentTypeRarity.Patches
                         key = "groupByAlpha",
                         text = "Alpha Group",
                         funcPart = ComparePartForSortingByGroupAlpha,
-                        funcSubsystem = groupSubSystemSortMethodInfoFunction,
+                        funcSubsystem = groupSubSystemSortFunc,
                     });
 
 
