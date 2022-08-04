@@ -94,5 +94,9 @@ enabled: true
 loadFromApplicationPath: false
 list: []
 ```
-### Create Mods folder
+### Create Mods Folder
 Create a new folder named Mods in ``%HOMEDRIVE%%HOMEPATH%\Documents\My Games\Phantom Brigade\``
+
+### Done
+The Phantom Brigade Mods option will now be enabled when the game is launched.
+
